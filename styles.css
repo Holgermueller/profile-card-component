@@ -86,6 +86,22 @@ h1 {
 
 .stats {
   border-top: 2px solid var(--Dark-gray);
+  margin: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.stats .stat {
+  grid-row: 1;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.stats .heading {
+  grid-row: 2;
+  color: var(--Dark-gray);
+  padding-top: 0;
 }
 
 footer {
