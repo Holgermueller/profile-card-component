@@ -15,7 +15,6 @@ html {
   overflow: hidden;
   display: grid;
   place-items: center;
-  align-content: center;
   font-family: "Kumbh Sans", sans-serif;
   background-color: var(--Dark-cyan);
 }
@@ -76,32 +75,36 @@ h1 {
 
 .age,
 .location {
-  color: var(--Dark-grayish-blue);
+  color: var(--Dark-gray);
 }
 
 .location {
   font-weight: 400;
   margin-top: 0;
+  font-size: 1rem;
 }
 
 .stats {
-  border-top: 2px solid var(--Dark-gray);
-  margin: auto;
+  border-top: 1px solid var(--Dark-gray);
+  margin: 5% auto 0;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding: 5% 2% 10%;
 }
 
 .stats .stat {
   grid-row: 1;
   font-weight: 700;
   font-size: 1.5rem;
+  align-self: end;
 }
 
 .stats .heading {
   grid-row: 2;
   color: var(--Dark-gray);
-  padding-top: 0;
+  margin-top: 0;
+  align-self: start;
 }
 
 footer {
@@ -118,4 +121,17 @@ footer {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 600px) {
+  #top-background-image {
+    margin-top: -25%;
+    margin-left: -25%;
+    top: auto;
+  }
+
+  #bottom-background-image {
+    margin-right: -25%;
+    margin-bottom: -25%;
+  }
 }
